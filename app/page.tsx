@@ -224,7 +224,7 @@ export default function Portfolio() {
                 <CardContent className="pb-6">
                   <Button size="sm" asChild className="rounded-none w-full gap-2">
                     <a href="mailto:rakeshraghavjha.30march@gmail.com">
-                      <Mail className="w-4 h-4" /> Message Author
+                      <Mail className="w-4 h-4" /> Message Rakesh
                     </a>
                   </Button>
                 </CardContent>
