@@ -20,7 +20,7 @@ export default function Portfolio() {
             <Link href="#projects" className="hover:text-foreground transition-colors">Projects</Link>
           </div>
           <Button variant="outline" size="sm" asChild>
-            <Link href="#resume">Resumes</Link>
+            <Link href="#resume">Contact & CV</Link>
           </Button>
         </div>
       </nav>
@@ -83,8 +83,6 @@ export default function Portfolio() {
           <h2 className="text-2xl font-semibold tracking-tight border-b pb-4">Professional Experience</h2>
           <div className="space-y-8 border-l border-muted ml-3 pl-8 relative">
             
-            
-
             {/* Timeline Item 1: Technical/Cloud */}
             <div className="relative">
               <div className="absolute w-3 h-3 bg-muted border border-foreground rounded-full -left-[38px] top-1.5" />
@@ -99,12 +97,9 @@ export default function Portfolio() {
                <p className="mt-3 text-sm text-muted-foreground leading-relaxed max-w-2xl">
                  Programmed modular Python and Bash telemetry daemons anchored in Linux networking internals to dynamically capture live compute resource metrics.
               </p>
-
             </div>
 
-          
-
-        </div>
+          </div>
         </section>
 
         {/* Projects Grid */}
@@ -191,37 +186,51 @@ export default function Portfolio() {
           </div>
         </section>
 
-          
-
-        {/*  Resume Integration Section */}
+        {/*  Resume & Contact Integration Section */}
         <section id="resume" className="space-y-8 bg-muted/30 p-8 rounded-lg border border-muted/50 text-center">
           <div className="max-w-2xl mx-auto space-y-6">
             <FileText className="w-12 h-12 mx-auto text-muted-foreground" />
-            <h2 className="text-2xl font-semibold tracking-tight">Curriculum Vitae</h2>
+            <h2 className="text-2xl font-semibold tracking-tight">Credentials & Engagement</h2>
             <p className="text-sm text-muted-foreground">
-              Select the resume that best aligns with your organizational needs.
+              Review my technical documentation or initiate a direct engineering inquiry.
             </p>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 max-w-xl mx-auto">
               
               {/* Cloud Resume Card */}
-              <Card className="shadow-none bg-background rounded-none border-muted">
+              <Card className="shadow-none bg-background rounded-none border-muted flex flex-col justify-between">
                 <CardHeader className="pb-4">
-                  <CardTitle className="text-base font-medium">Cloud & Devops Engineering</CardTitle>
+                  <CardTitle className="text-base font-medium">Cloud & DevOps Engineering</CardTitle>
+                  <CardDescription className="text-xs">Curriculum Vitae</CardDescription>
                 </CardHeader>
-                <CardContent className="flex justify-center gap-2">
+                <CardContent className="flex justify-center gap-2 pb-6">
                   <Button size="sm" asChild className="rounded-none">
-                    <a href="/cloud-resume.pdf" target="_blank" rel="noopener noreferrer">View</a>
+                    <a href="/Rakesh-Jha-Resume.pdf" target="_blank" rel="noopener noreferrer">View</a>
                   </Button>
                   <Button size="sm" variant="outline" asChild className="rounded-none gap-2">
-                    <a href="/public/Rakesh-Jha-Resume.pdf" download="Rakesh_Jha_Resume.pdf">
+                    <a href="/Rakesh-Jha-Resume.pdf" download="Rakesh_Jha_Resume.pdf">
                       <Download className="w-4 h-4" /> Save
                     </a>
                   </Button>
                 </CardContent>
               </Card>
 
-              </div>
+              {/* Direct Contact Card */}
+              <Card className="shadow-none bg-background rounded-none border-muted flex flex-col justify-between">
+                <CardHeader className="pb-4">
+                  <CardTitle className="text-base font-medium">Contact & Inquiries</CardTitle>
+                  <CardDescription className="text-xs">Direct Email Communication</CardDescription>
+                </CardHeader>
+                <CardContent className="pb-6">
+                  <Button size="sm" asChild className="rounded-none w-full gap-2">
+                    <a href="mailto:rakeshraghavjha.30march@gmail.com">
+                      <Mail className="w-4 h-4" /> Message Author
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+
+            </div>
           </div>
         </section>
 
