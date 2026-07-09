@@ -33,10 +33,10 @@ export default function Portfolio() {
             Rakesh <span className="font-semibold">Jha</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground font-light max-w-2xl">
-            Cloud Operations & Technical Sales Engineer
+            Platform & Cloud Operations Engineer
           </p>
           <p className="text-sm md:text-base text-muted-foreground max-w-3xl leading-relaxed mt-4">
-            Bridging the gap between complex infrastructure and strategic business growth. I combine deep technical expertise in AWS cloud architecture and CI/CD pipelines with a definitive track record in corporate sales, GTM strategy, and enterprise stakeholder management.
+            Engineering high-availability cloud layouts, resilient CI/CD pipelines, and declarative infrastructure automation frameworks. Focused on optimizing cloud architecture, telemetry systems, and secure container networking.
           </p>
           
           <div className="flex gap-4 pt-4">
@@ -60,97 +60,130 @@ export default function Portfolio() {
           <h2 className="text-2xl font-semibold tracking-tight border-b pb-4">Core Competencies</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
             <div className="space-y-2">
-              <h3 className="font-medium text-foreground">Corporate Sales & GTM</h3>
-              <p className="text-muted-foreground leading-relaxed">Enterprise Sales Pitching, B2B Deal Closing, Pipeline Forecasting, Digital Brand Marketing, Stakeholder Management.</p>
+              <h3 className="font-medium text-foreground">Cloud Infrastructure</h3>
+              <p className="text-muted-foreground leading-relaxed">AWS (VPC, EC2, IAM, Route53, S3), Security Groups & NACLs, High-Availability Topology Design.</p>
             </div>
             <div className="space-y-2">
-              <h3 className="font-medium text-foreground">Cloud Architecture</h3>
-              <p className="text-muted-foreground leading-relaxed">AWS (EC2, VPC, S3, IAM), Linux Systems Internals, High-Availability Layouts, Infrastructure as Code (Terraform).</p>
+              <h3 className="font-medium text-foreground">Orchestration & Primitives</h3>
+              <p className="text-muted-foreground leading-relaxed">Kubernetes (K8s Clusters, Pod Networking, Service Discovery), Docker, Docker Compose.</p>
             </div>
             <div className="space-y-2">
-              <h3 className="font-medium text-foreground">DevOps & Platforms</h3>
-              <p className="text-muted-foreground leading-relaxed">CI/CD Pipelines (Jenkins, GitHub Actions), GitOps (ArgoCD), Containerization (Docker, Kubernetes), Telemetry.</p>
+              <h3 className="font-medium text-foreground">Automation & CI/CD</h3>
+              <p className="text-muted-foreground leading-relaxed">Jenkins (Pipelines-as-Code), ArgoCD GitOps, GitHub Actions, Infrastructure as Code (Terraform).</p>
             </div>
             <div className="space-y-2">
-              <h3 className="font-medium text-foreground">Data & Languages</h3>
-              <p className="text-muted-foreground leading-relaxed">Python, Java, Advanced Bash Scripting, SQL, Relational Schemas, Data-Driven Pipeline Forecasting.</p>
+              <h3 className="font-medium text-foreground">Systems & Observability</h3>
+              <p className="text-muted-foreground leading-relaxed">Linux OS (Ubuntu Internals), Shell Scripting, Python, Prometheus, Grafana Telemetry, Relational Schemas</p>
             </div>
           </div>
         </section>
 
-        {/* Dual-Track Experience Timeline */}
+        {/* Technical Hands-on Experience Timeline */}
         <section id="experience" className="space-y-8">
           <h2 className="text-2xl font-semibold tracking-tight border-b pb-4">Professional Experience</h2>
           <div className="space-y-8 border-l border-muted ml-3 pl-8 relative">
             
-            {/* Timeline Item 1: Business/Sales */}
-            <div className="relative">
-              <div className="absolute w-3 h-3 bg-foreground rounded-full -left-[38px] top-1.5" />
-              <h3 className="text-lg font-medium">Startup Mentor (Strategy & Sales)</h3>
-              <span className="text-sm text-muted-foreground">Foundersclan | Feb 2025 - Present</span>
-              <p className="mt-3 text-sm text-muted-foreground leading-relaxed max-w-2xl">
-                Strategized targeted B2B sales workflows and accelerated regional outreach across competitive demographics. Closed a major corporate workshop of 150+ participants by securing 2 external commercial sponsorships, achieving self-funding status.
-              </p>
-            </div>
+            
 
-            {/* Timeline Item 2: Technical/Cloud */}
+            {/* Timeline Item 1: Technical/Cloud */}
             <div className="relative">
               <div className="absolute w-3 h-3 bg-muted border border-foreground rounded-full -left-[38px] top-1.5" />
               <h3 className="text-lg font-medium">DevOps & Systems Engineering Practitioner</h3>
               <span className="text-sm text-muted-foreground">Infrastructure Automation | April 2026 - Present</span>
               <p className="mt-3 text-sm text-muted-foreground leading-relaxed max-w-2xl">
-                Provisioned high-availability cloud layouts on AWS via Terraform. Engineered automated CI/CD release tracks using Jenkins and GitHub Actions. Programmed custom telemetry daemons to dynamically audit production metrics and optimize uptime.
+                 Provisioned high-availability cloud infrastructure layouts on AWS using Terraform modules, implementing Nginx reverse proxies and PM2 cluster supervision.
               </p>
-            </div>
-
-            {/* Timeline Item 3: Leadership/Marketing */}
-            <div className="relative">
-              <div className="absolute w-3 h-3 bg-muted border border-foreground rounded-full -left-[38px] top-1.5" />
-              <h3 className="text-lg font-medium">Club Coordinator & Marketing Strategist</h3>
-              <span className="text-sm text-muted-foreground">Speakathon Club | Aug 2023 - Aug 2024</span>
               <p className="mt-3 text-sm text-muted-foreground leading-relaxed max-w-2xl">
-                Deployed an enterprise-scale soft-skills curriculum, successfully onboarding 1,000+ candidates. Spearheaded a digital marketing framework across social platforms, capturing over 8,000 collective views and driving inbound candidate registration.
+                 Implemented automated multi-environment CI/CD release tracks with Jenkins, GitHub Actions, and ArgoCD state reconciliation loops to accelerate deployment velocity.
               </p>
+               <p className="mt-3 text-sm text-muted-foreground leading-relaxed max-w-2xl">
+                 Programmed modular Python and Bash telemetry daemons anchored in Linux networking internals to dynamically capture live compute resource metrics.
+              </p>
+
             </div>
 
-          </div>
+          
+
+        </div>
         </section>
 
         {/* Projects Grid */}
         <section id="projects" className="space-y-8">
           <h2 className="text-2xl font-semibold tracking-tight border-b pb-4">Selected Architecture & Engineering</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 gap-8">
             
+            {/* Project 1: AWS VPC, ASG, & ALB Network Infrastructure */}
             <Card className="shadow-none bg-transparent border-muted rounded-none">
               <CardHeader>
-                <CardTitle className="text-lg">Automated GitOps Engine</CardTitle>
-                <CardDescription>Infrastructure & Business Optimization</CardDescription>
+                <CardTitle className="text-lg">Highly Available AWS Network & Cloud Governance Framework</CardTitle>
+                <CardDescription>Cloud Architecture & Automation</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Built a high-throughput CI/CD pipeline. Translated core cloud infrastructure metrics into clear business benefits, demonstrating how automated deployment minimizes risk, accelerates release velocity, and optimizes end-user reliability.
+                  Engineered a custom Multi-AZ AWS VPC using isolated public and private subnet topologies to eliminate single points of failure. Configured perimeter network defenses using Security Groups and NACLs to completely isolate backend EC2 targets from public exposure. Integrated an Application Load Balancer (ALB) for smooth traffic routing backed by an Auto Scaling Group (ASG) to dynamically scale compute layers under high traffic strain. Additionally, developed a modular Bash governance script using the AWS CLI to automate active cloud resource monitoring and track cost footprints.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="secondary" className="rounded-sm font-normal">AWS VPC</Badge>
+                  <Badge variant="secondary" className="rounded-sm font-normal">EC2 / ASG / ALB</Badge>
+                  <Badge variant="secondary" className="rounded-sm font-normal">Security Groups & NACLs</Badge>
+                  <Badge variant="secondary" className="rounded-sm font-normal">Bash Scripting</Badge>
+                </div>
+                <div className="pt-2">
+                  <img 
+                    src="/screenshots/3-tier.png" 
+                    alt="AWS Network Infrastructure Demonstration Page" 
+                    className="border border-muted max-h-96 w-auto object-contain"
+                  />
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Project 2: Automated GitOps Engine */}
+            <Card className="shadow-none bg-transparent border-muted rounded-none">
+              <CardHeader>
+                <CardTitle className="text-lg">Automated GitOps Engine & CI/CD Release Pipeline</CardTitle>
+                <CardDescription>Infrastructure Automation</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Built a high-throughput, standardized continuous integration framework capable of handling multi-stage syntax compilation, structural code linting, and automated testing gates efficiently. Implemented declarative configurations and state reconciliation loops to eliminate manual infrastructure drift and ensure safe, repeatable promotions.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="secondary" className="rounded-sm font-normal">Jenkins</Badge>
                   <Badge variant="secondary" className="rounded-sm font-normal">ArgoCD</Badge>
                   <Badge variant="secondary" className="rounded-sm font-normal">GitHub Actions</Badge>
                 </div>
+                <div className="pt-2">
+                  <img 
+                    src="/screenshots/CI-CD pipeline.png" 
+                    alt="CI/CD Server Build and Deploy Logs" 
+                    className="border border-muted max-h-96 w-auto object-contain"
+                  />
+                </div>
               </CardContent>
             </Card>
 
+            {/* Project 3: Multi-Container Platform Isolation */}
             <Card className="shadow-none bg-transparent border-muted rounded-none">
               <CardHeader>
-                <CardTitle className="text-lg">Multi-Container Platform Isolation</CardTitle>
+                <CardTitle className="text-lg">Multi-Container Platform Isolation & Microservices Network</CardTitle>
                 <CardDescription>Container Orchestration</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Containerized a decoupled software ecosystem. Designed isolated container networking topologies using custom virtual network bridges to secure cross-tier service discovery and eliminate public host interface exposure.
+                  Containerized a decoupled software application ecosystem, constructing optimized multi-stage Dockerfiles to minimize container image footprints and secure deployment boundaries. Designed isolated container networking topologies within a Kubernetes cluster using custom virtual network bridges to facilitate private cross-tier service discovery while completely closing public host interface exposure.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="secondary" className="rounded-sm font-normal">Docker</Badge>
                   <Badge variant="secondary" className="rounded-sm font-normal">Kubernetes</Badge>
                   <Badge variant="secondary" className="rounded-sm font-normal">Terraform</Badge>
+                </div>
+                <div className="pt-2">
+                  <img 
+                    src="/screenshots/docker-compose.png" 
+                    alt="Kubernetes Targets and Load Balancer Status" 
+                    className="border border-muted max-h-96 w-auto object-contain"
+                  />
                 </div>
               </CardContent>
             </Card>
@@ -158,7 +191,9 @@ export default function Portfolio() {
           </div>
         </section>
 
-        {/* Dual Resume Integration Section */}
+          
+
+        {/*  Resume Integration Section */}
         <section id="resume" className="space-y-8 bg-muted/30 p-8 rounded-lg border border-muted/50 text-center">
           <div className="max-w-2xl mx-auto space-y-6">
             <FileText className="w-12 h-12 mx-auto text-muted-foreground" />
@@ -172,7 +207,7 @@ export default function Portfolio() {
               {/* Cloud Resume Card */}
               <Card className="shadow-none bg-background rounded-none border-muted">
                 <CardHeader className="pb-4">
-                  <CardTitle className="text-base font-medium">Cloud & Ops Engineering</CardTitle>
+                  <CardTitle className="text-base font-medium">Cloud & Devops Engineering</CardTitle>
                 </CardHeader>
                 <CardContent className="flex justify-center gap-2">
                   <Button size="sm" asChild className="rounded-none">
@@ -186,24 +221,7 @@ export default function Portfolio() {
                 </CardContent>
               </Card>
 
-              {/* Sales Resume Card */}
-              <Card className="shadow-none bg-background rounded-none border-muted">
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-base font-medium">Corporate Sales & GTM</CardTitle>
-                </CardHeader>
-                <CardContent className="flex justify-center gap-2">
-                  <Button size="sm" asChild className="rounded-none">
-                    <a href="/sales-resume.pdf" target="_blank" rel="noopener noreferrer">View</a>
-                  </Button>
-                  <Button size="sm" variant="outline" asChild className="rounded-none gap-2">
-                    <a href="/sales-resume.pdf" download="Rakesh_Jha_Sales_Resume.pdf">
-                      <Download className="w-4 h-4" /> Save
-                    </a>
-                  </Button>
-                </CardContent>
-              </Card>
-
-            </div>
+              </div>
           </div>
         </section>
 
