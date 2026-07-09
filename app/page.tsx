@@ -214,7 +214,7 @@ export default function Portfolio() {
                     <a href="/cloud-resume.pdf" target="_blank" rel="noopener noreferrer">View</a>
                   </Button>
                   <Button size="sm" variant="outline" asChild className="rounded-none gap-2">
-                    <a href="/cloud-resume.pdf" download="Rakesh_Jha_Cloud_Resume.pdf">
+                    <a href="/public/Rakesh-Jha-Resume.pdf" download="Rakesh_Jha_Resume.pdf">
                       <Download className="w-4 h-4" /> Save
                     </a>
                   </Button>
