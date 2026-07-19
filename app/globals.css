@@ -46,6 +46,32 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* Micro-Animations configuration mappings */
+  --animate-fade-in-up: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-fade-in: fadeIn 0.4s ease-out forwards;
+
+  /* Ambient data stream current flows */
+  --animate-stream-1: cyberWind 12s linear infinite;
+  --animate-stream-2: cyberWind 18s linear infinite;
+  --animate-stream-3: cyberWind 15s linear infinite;
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes cyberWind {
+    0% { transform: translateX(-100%) translateY(0) skewX(-15deg); opacity: 0; }
+    10% { opacity: 0.15; }
+    90% { opacity: 0.15; }
+    100% { transform: translateX(200%) translateY(-20px) skewX(-15deg); opacity: 0; }
+  }
 }
 
 :root {
@@ -122,10 +148,23 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground relative min-h-screen antialiased selection:bg-primary selection:text-primary-foreground;
   }
   html {
     @apply font-sans;
     scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .bg-grid-blueprint {
+    background-size: 32px 32px;
+    background-image: 
+      linear-gradient(to right, var(--color-border) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--color-border) 1px, transparent 1px);
+    
+    /* Strict fading layer boundaries */
+    mask-image: radial-gradient(ellipse 80% 50% at 50% 0%, #000 40%, rgba(0,0,0,0.1) 85%, transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 50% at 50% 0%, #000 40%, rgba(0,0,0,0.1) 85%, transparent 100%);
   }
 }
